@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css'
+import flagArgentina from './flagArgentina.svg';
+import flagInglaterra from './flagInglaterra.svg';
 
 const Header = () => {
   return (
     <header>
-      <nav className="navbar">
+      <nav className="navbar" >
     
         {/* <div className="navbar-logo">
           <img src="#" alt="Logo de la Compañía" id="logo">
         </div> */}
         <ul className="navbar-links">
-          <li><Link to="servicios">Servicios</Link></li>
+          <li className="nav-link">
+            <Link to="servicios">Servicios</Link>
+          </li>
           <li className="nav-link">
             <Link to="productos">Productos</Link>
           </li>
@@ -26,12 +30,17 @@ const Header = () => {
           </li>
         </ul>
         <div className="navbar-flags">
-          {/* <img src="flag-es.png" alt="España" class="flag">
-          <img src="flag-us.png" alt="Estados Unidos" class="flag"> */}
+          <Link to="/Erven/esp/contenedor">
+          <img src={flagArgentina} alt="España" className="flag" />
+          </Link>
+          <span style={{ fontSize: '30px', color:'darkblue', padding:'0px 0px 3px 0px'}}>/</span>
+          <Link to="/Erven/eng/contenedor">
+          <img src={flagInglaterra} style={{paddingLeft:'2px'}} alt="Inglaterra" className="flag" />
+          </Link>
         </div>
       </nav>
   </header>
-  )
+  );
 }
 
 export default Header
