@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
+/* import {BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import React, {useState} from "react"
 import Contenedor from "./components/contenedor"
 import NotFound from "./notFound"
@@ -38,4 +38,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; */

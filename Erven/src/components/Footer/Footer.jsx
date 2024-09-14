@@ -2,9 +2,11 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>hola jeje</footer>
+    <footer>
+      hola je
+    </footer>
     
-  )
+  );
 }
 
 export default Footer
