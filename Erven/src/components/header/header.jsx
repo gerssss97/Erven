@@ -33,7 +33,7 @@ const Header = () => {
           <Link to="/Erven/esp/contenedor">
           <img src={flagArgentina} alt="España" className="flag" />
           </Link>
-          <span style={{ fontSize: '30px', color:'darkblue', padding:'0px 0px 3px 0px'}}>/</span>
+          <span style={{ fontSize: '29px', color:'darkblue', padding:'0px 0px 8px 0px'}}>/</span>
           <Link to="/Erven/eng/contenedor">
           <img src={flagInglaterra} style={{paddingLeft:'2px'}} alt="Inglaterra" className="flag" />
           </Link>
