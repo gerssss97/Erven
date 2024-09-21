@@ -1,0 +1,73 @@
+.card {
+    background-color: #297B92;
+    padding: 20%;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(171, 12, 12, 0.1);
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Añade una transición para el efecto */
+    z-index: 1;
+    align-items: center;
+    height: 200px;
+  }
+  
+  .icono-svc {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  button {
+    background-color: white;
+    border: none;
+    color: #297B92;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .slick-prev:before, .slick-next:before {
+  display: none; /* Ocultar las flechas por defecto de Slick */
+}
+
+
+.slider-container{
+    width: 95vw;
+    height: 15vh;
+    margin: 40px; 
+    
+  }
+
+.slick-center .card {
+    margin:  15px 15px 15px 15px !important;
+    transform: scale(1.2); 
+    z-index: 2;
+    
+   
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center !important; /* Alinea las tarjetas en el centro */
+    align-items: center !important;
+  }

@@ -1,0 +1,61 @@
+.trabajandogrupo-1-icon {
+    position: absolute;
+    top: 0px;
+    left: -57px;
+    width: 1340px;
+    height: 638px;
+    object-fit: cover;
+    }
+.component-child {
+    position: absolute;
+    top: 0px;
+    left: 879px;
+    width: 363px;
+    height: 487px;
+    }
+    .component-item {
+    position: absolute;
+    top: 0px;
+    left: 1061px;
+    background-color: #297b92;
+    width: 859px;
+    height: 366px;
+    }
+    .component-inner {
+    position: absolute;
+    top: 299px;
+    left: 1283px;
+    background-color: #a79a9a;
+    width: 637px;
+    height: 118px;
+    }
+    .slogan {
+    position: absolute;
+    top: 126px;
+    left: 1362px;
+    display: inline-block;
+    width: 312px;
+    height: 118px;
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+    opacity: 0.9;
+    }
+    .rectangle-div {
+    position: absolute;
+    top: 366px;
+    left: 0px;
+    background-color: #fff;
+    width: 1283px;
+    height: 51px;
+    }
+    .trabajandogrupo-1-parent {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 417px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 64px;
+    color: #fff;
+    font-family: Inter;
+    }
+    
