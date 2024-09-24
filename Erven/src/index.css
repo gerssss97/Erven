@@ -2,33 +2,36 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif ;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #ffffff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  margin: 0 auto;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Asegura que todo usa el mismo box model */
 }
 
 
 body {
   margin: 0;
-  line-height: normal;  
-  margin: 0;
-  text-align: center;
+  padding: 0;
+  line-height: normal;
   display: flex;
-  place-items: center;
-  justify-content: center; 
-  width: 100%;
-  
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;  /* Asegura que el body ocupe todo el ancho de la ventana */
+  height: 100vh;
+  overflow-x: hidden; /* Evita cualquier desbordamiento horizontal */
 }
 
 h1 {
