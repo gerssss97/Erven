@@ -1,90 +1,50 @@
-import Slider from "react-slick";
-import React from 'react';
+import React, {useState} from 'react';
 import './Carrusel.css';
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Usaremos íconos de React Icons (opcional)
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import './Carrusel.css'; 
 
-const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <FaArrowLeft
-      className={className}
-      style={{ ...style, display: "block",
-        color: "#646cff",  // Change the color to a dark gray
-        fontSize: "80px",  // Increase the font size to make it taller
-        opacity: 1,
-        minHeight: "50px",
-        paddingLeft: "0px",
-        backgroundColor: "grey",  // Remove the background color
-        borderRadius: 0,  // Remove the border radius
-        boxShadow: "none" }}
-      onClick={onClick}
-    />
-  );
-};
+const Carrusel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const items = [
+    { id: 1, content: "Carta 1" },
+    { id: 2, content: "Carta 2" },
+    { id: 3, content: "Carta 3" },
+    { id: 4, content: "Carta 4" },
+  ];
+  const totalItems = items.length;
 
-const NextArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <FaArrowRight
-      className={className}
-      style={{ ...style, display: "block", color: "#297B92", fontSize: "24px" }}
-      onClick={onClick}
-    />
-  );
-};
-
-
-function Carrusel() {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "30px",
-    slidesToShow: 3,
-    speed: 500,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
   };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? totalItems - 1 : prevIndex - 1
+    );
+  };
+
+  // Calcular los índices de las cartas que se mostrarán
+  const leftIndex = (currentIndex - 1 + totalItems) % totalItems;
+  const rightIndex = (currentIndex + 1) % totalItems;
+
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div className="card">
-         
-              <h3>Título del svc</h3>
-              <p>Descripción del svc</p>
-              <button>Cotizá/Consultá</button>
+    <div className="carousel">
+      <button className="arrow left" onClick={prevSlide}>❮</button>
+      <div className="carousel-container">
+        <div className={`card left`} key={items[leftIndex].id}>
+          {items[leftIndex].content}
         </div>
-        <div className="card">
-            <h3>Título del svc</h3>
-             <p>Descripción del svc</p>
-             <button>Cotizá/Consultá</button>
+        <div className={`card active`} key={items[currentIndex].id}>
+          {items[currentIndex].content}
         </div>
-        <div className="card">
-        <h3>Título del svc</h3>
-             <p>Descripción del svc</p>
-             <button>Cotizá/Consultá</button>
+        <div className={`card right`} key={items[rightIndex].id}>
+          {items[rightIndex].content}
         </div>
-        <div className="card">
-        <h3>Título del svc</h3>
-             <p>Descripción del svc</p>
-             <button>Cotizá/Consultá</button>
-        </div>
-        <div className="card">
-        <h3>Título del svc</h3>
-             <p>Descripción del svc</p>
-             <button>Cotizá/Consultá</button>
-        </div>
-        <div className="card">
-        <h3>Título del svc</h3>
-             <p>Descripción del svc</p>
-             <button>Cotizá/Consultá</button>
-        </div>
-      </Slider>
+      </div>
+      <button className="arrow right" onClick={nextSlide}>❯</button>
     </div>
   );
-}
+};
+
 
 export default Carrusel;
+

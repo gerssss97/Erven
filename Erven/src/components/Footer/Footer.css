@@ -7,13 +7,21 @@
     text-align: left;
     align-items: center;
     width: 100%;  
-    justify-content: end;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
+.mi-tabla {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    border-collapse: separate; /* Elimina el espacio entre celdas */
+}
+  
 .column {
-    flex: 1; 
-    margin: 0 1rem;
-  }
+    padding: 10px; /* Espaciado interno para las celdas */
+    vertical-align: top; /* Alinea el contenido en la parte superior */
+    flex: 1;
+    min-width: 200px;
+}
   
 .lista {
     margin: 0;
@@ -32,7 +40,15 @@
 .lista2{
     list-style: none;
 }
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los iconos estén en una columna */
+    align-items: center; /* Centra los iconos horizontalmente */
+}
+
 .svgs{
     padding-right: 20vw;
+    padding-top: 10px;
     max-width: 40px;
 }

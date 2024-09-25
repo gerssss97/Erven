@@ -7,8 +7,6 @@ import Productos from "../components/Productos"
 import Proyectos from '../components/Proyectos'
 import Nosotros from "../components/Nosotros"
 import Contacto from "../components/Contacto"
-import Header from '../components/header/Header'
-import Footer from '../components/Footer/Footer'
 import Landing from '../components/Landing/Landing'
 
 const idioma  = "esp";

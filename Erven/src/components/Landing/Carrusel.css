@@ -1,16 +1,4 @@
-.card {
-    background-color: #297B92;
-    padding: 20%;
-    text-align: center;
-    border-radius: 30px;
-    color: white;
-    box-shadow: 0 10px 20px rgba(171, 12, 12, 0.1);
-    transition: transform 0.3s ease, z-index 0.3s ease; /* Añade una transición para el efecto */
-    z-index: 1;
-    align-items: center;
-    height: 200px;
-  }
-  
+
   .icono-svc {
     width: 50px;
     height: 50px;
@@ -38,36 +26,56 @@
     font-size: 14px;
     line-height: 1.5;
   }
-
-  .slick-prev:before, .slick-next:before {
-  display: none; /* Ocultar las flechas por defecto de Slick */
-}
-
-
-.slider-container{
-    width: 95vw;
-    height: 15vh;
-    margin: 40px; 
-    margin-top: auto;
-  }
-
-.slick-center .card {
-    margin:  15px 15px 15px 15px !important;
-    transform: scale(1.2); 
-    z-index: 2;
-    
-   
-}
-
-.slick-track {
-    display: flex !important;
+  .carousel {
+    display: flex;
     align-items: center;
-    height: 400px;
-    box-sizing: border-box;
-}
-
-.slick-slide {
-    display: flex !important;
-    justify-content: center !important; /* Alinea las tarjetas en el centro */
-    align-items: center !important;
+    position: relative;
+    height: 25vh;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .card {
+    min-width: 200px; /* Ajusta el ancho según sea necesario */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    background: lightblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .active {
+    transform: scale(1.2); /* Carta central más grande */
+  }
+  
+  .left,
+  .right {
+    transform: scale(0.9); /* Cartas laterales más pequeñas */
+  }
+  
+  .arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .left {
+    left: 24vw;
+  }
+  
+  .right {
+    right: 24vw;
   }

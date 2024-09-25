@@ -1,7 +1,6 @@
 .banner-container{
-
   width: 100vw;
-  height: 30%;
+  height: 25vh;
   align-items: center; /* Centra los elementos verticalmente */
   justify-content: center; /* Centra los elementos horizontalmente (opcional) */
   top: 0; /* Stick to the top of the viewport */
@@ -10,11 +9,12 @@
   margin-top: 5rem;
   position: relative;
   overflow: hidden;
+  top: 20px;
 }
 
  .imagen-banner{
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   object-position: center;
  }
