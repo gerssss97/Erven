@@ -10,7 +10,15 @@ const PrevArrow = (props) => {
   return (
     <FaArrowLeft
       className={className}
-      style={{ ...style, display: "block", color: "#297B92", fontSize: "24px" }}
+      style={{ ...style, display: "block",
+        color: "#646cff",  // Change the color to a dark gray
+        fontSize: "80px",  // Increase the font size to make it taller
+        opacity: 1,
+        minHeight: "50px",
+        paddingLeft: "0px",
+        backgroundColor: "grey",  // Remove the background color
+        borderRadius: 0,  // Remove the border radius
+        boxShadow: "none" }}
       onClick={onClick}
     />
   );

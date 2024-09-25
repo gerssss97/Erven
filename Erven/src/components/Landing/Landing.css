@@ -1,59 +1,20 @@
 .banner-container{
-  display: flex;
-  width: 100%;
-  background-color: black;
-  opacity: 1;
-  max-height: 15%;
+
+  width: 100vw;
+  height: 30%;
   align-items: center; /* Centra los elementos verticalmente */
   justify-content: center; /* Centra los elementos horizontalmente (opcional) */
-  /* overflow: hidden;  */
- }
-
- .banner-container * {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  position: static;
-
- }
-
- section{
-  display: flex;
-  flex-direction: row;
- }
-
- h1{
-  color: white;
- }
- .inner{
-  max-width: 1200px;
-  margin: auto;
- }
-
-.first{
-  background-color: violet;
-  width: auto;
- }
-
- .second{
-  height: fit-content;
-  background-color: #2d779c;
- }
- .second h1{
-  color: red;
- }
-
-.separator{
-  width: 50%;
-  border-top: 15rem solid blue;
-  border-right: 15vw solid red;
-  max-height: 100%;
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Stick to the left of the viewport */
+  z-index: 2;
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.fotoGrupo{
-  max-height: 100%;
-  height: max-content;
-  width: max-content;
-  
-}
-
+ .imagen-banner{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+ }

@@ -6,13 +6,11 @@ import { Outlet } from 'react-router'
 
 const Contenedor = () => {
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width:'100vw'}}>
       <Header />
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
-    </>
+    </div>
   );
 }
 
