@@ -1,50 +1,50 @@
 import React, {useState} from 'react';
 import './Carrusel.css';
-import './Carrusel.css'; 
+import { Navigation} from 'swiper/modules';
+import { Swiper, SwiperSlide ,cardsEffect} from 'swiper/react';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
-const Carrusel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const items = [
-    { id: 1, content: "Carta 1" },
-    { id: 2, content: "Carta 2" },
-    { id: 3, content: "Carta 3" },
-    { id: 4, content: "Carta 4" },
-  ];
-  const totalItems = items.length;
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? totalItems - 1 : prevIndex - 1
-    );
-  };
-
-  // Calcular los índices de las cartas que se mostrarán
-  const leftIndex = (currentIndex - 1 + totalItems) % totalItems;
-  const rightIndex = (currentIndex + 1) % totalItems;
-
-  return (
-    <div className="carousel">
-      <button className="arrow left" onClick={prevSlide}>❮</button>
-      <div className="carousel-container">
-        <div className={`card left`} key={items[leftIndex].id}>
-          {items[leftIndex].content}
-        </div>
-        <div className={`card active`} key={items[currentIndex].id}>
-          {items[currentIndex].content}
-        </div>
-        <div className={`card right`} key={items[rightIndex].id}>
-          {items[rightIndex].content}
-        </div>
-      </div>
-      <button className="arrow right" onClick={nextSlide}>❯</button>
-    </div>
+  export default ()=> (
+    <Swiper
+      modules={[Navigation, cardsEffect]} //modulos cargados
+      spaceBetween={100} 
+      slidesPerView={3} //parametro
+      navigation
+      cardsEffect={{perSlideRotate: 40}}
+      allowSlideNext={true}
+      perSlideRotate={40}
+      rotate={true}
+     
+     
+  >
+    <SwiperSlide className='card'>Slide 1</SwiperSlide>
+    <SwiperSlide className='card2'>Slide 2</SwiperSlide>
+    <SwiperSlide>Slide 3</SwiperSlide>
+    <SwiperSlide>Slide 4</SwiperSlide>
+  </Swiper>
   );
-};
 
 
-export default Carrusel;
 
+// export default Carrusel;
+
+  {/* // <div className="carousel">
+    //   <button className="arrow left" onClick={prevSlide}>❮</button>
+    //   <div className="carousel-container">
+    //     <div className={`card left`} key={items[leftIndex].id}>
+    //       {items[leftIndex].content}
+    //     </div>
+    //     <div className={`card active`} key={items[currentIndex].id}>
+    //       {items[currentIndex].content}
+    //     </div>
+    //     <div className={`card right`} key={items[rightIndex].id}>
+    //       {items[rightIndex].content}
+    //     </div>
+    //   </div>
+    //   <button className="arrow right" onClick={nextSlide}>❯</button>
+    // </div> */}
