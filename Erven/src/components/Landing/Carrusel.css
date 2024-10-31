@@ -83,14 +83,20 @@
   } */
 
 .swiper{
-  position: relative;
-  top: 30vh;
+  /* top: 25vh; */
   background-color: pink;
   height: 300px;
   width: 600px;
+  top: 6.5rem !important;
+  position: relative !important;
 }
-.card{
+
+.swiper-slide{
   background-color: green;
+  margin-top: 20px;
+}
+.swiper-slide-next{
+  transform: scale(1.2)!important;
 }
 .card2{
   background-color: aquamarine;
