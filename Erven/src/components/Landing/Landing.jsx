@@ -11,7 +11,7 @@ import triangulo from './Polygon 1.svg'
 
 const Landing = ()=> {
   return (
-  <>
+  <><div className="container-TODO">
   <div class="trabajandogrupo-1-parent">
     <img className="trabajandogrupo-1-icon" src={imagen}></img>
     <div className="rectangulo-azul"></div>
@@ -22,6 +22,7 @@ const Landing = ()=> {
   </div>
    
   <Carrusel></Carrusel>
+  </div>
   </> 
   );
 };

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Carrusel.css';
-import { Navigation} from 'swiper/modules';
-import { Swiper, SwiperSlide ,cardsEffect} from 'swiper/react';
+import { Navigation,EffectCards} from 'swiper/modules';
+import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -11,14 +11,15 @@ import 'swiper/css/effect-cards';
 
   export default ()=> (
     <Swiper
-      modules={[Navigation, cardsEffect]} //modulos cargados
+      modules={[Navigation,EffectCards ]} //modulos cargados
       spaceBetween={100} 
       slidesPerView={3} //parametro
       navigation
-      cardsEffect={{perSlideRotate: 40}}
-      allowSlideNext={true}
+      // cardsEffect={{perSlideRotate: 40}}
+      // allowSlideNext={true}
       perSlideRotate={40}
       rotate={true}
+      slideShadows
      
      
   >

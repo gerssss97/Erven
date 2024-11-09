@@ -88,6 +88,9 @@
   background-color: pink;
   height: 300px;
   width: 600px;
+  bottom: 10vh;
+  padding-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 .card{
   background-color: green;
