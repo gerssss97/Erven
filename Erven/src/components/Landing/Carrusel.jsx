@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Carrusel.css';
-import { Navigation,EffectCards} from 'swiper/modules';
-import { Swiper, SwiperSlide} from 'swiper/react';
+import { Navigation} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -9,30 +9,37 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 
 
-  export default ()=> (
+function Carrusel() {
+
+  return (
     <Swiper
-      modules={[Navigation,EffectCards ]} //modulos cargados
-      spaceBetween={100} 
-      slidesPerView={3} //parametro
+      modules={[Navigation]}
+      spaceBetween={100}
+      slidesPerView={3}
       navigation
-      // cardsEffect={{perSlideRotate: 40}}
-      // allowSlideNext={true}
-      perSlideRotate={40}
-      rotate={true}
-      slideShadows
-     
-     
-  >
-    <SwiperSlide className='card'>Slide 1</SwiperSlide>
-    <SwiperSlide className='card2'>Slide 2</SwiperSlide>
-    <SwiperSlide>Slide 3</SwiperSlide>
-    <SwiperSlide>Slide 4</SwiperSlide>
-  </Swiper>
+      className="carrusel"
+    >
+      <SwiperSlide>
+        Slide 1
+      </SwiperSlide>
+      <SwiperSlide>
+        Slide 2
+      </SwiperSlide>
+      <SwiperSlide>
+        Slide 3
+      </SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide>Slide 5</SwiperSlide>
+      <SwiperSlide>Slide 6</SwiperSlide>
+      <SwiperSlide>Slide 7</SwiperSlide>
+    </Swiper>
   );
+}
 
 
 
-// export default Carrusel;
+
+export default Carrusel;
 
   {/* // <div className="carousel">
     //   <button className="arrow left" onClick={prevSlide}>❮</button>
