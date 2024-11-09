@@ -6,10 +6,10 @@ import { Outlet } from 'react-router'
 
 const Contenedor = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width:'100vw'}}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', width:'100vw', position: 'relative'}}>
       <Header />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -6,6 +6,11 @@ import Carrusel from './Carrusel';
 import frame from './Frame 1.jpg';
 import imagen from './trabajandoGrupo 1.png'
 import triangulo from './Polygon 1.svg'
+import Footer from '../Footer/Footer';
+
+import '../Footer/Footer.css';
+import instagram from '../Footer/instagram.svg';
+import facebook from '../Footer/facebook.svg'
 
 
 
@@ -20,17 +25,29 @@ const Landing = ()=> {
     <div className="rectangulo-blanco"></div>
     <div className="rectangulo-gris"></div>
   </div>
-   
+
+  <div className='texto-central'> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, 
+    nobis ex, ad tenetur libero saepe voluptatum est alias incidunt, itaque dignissimos! Enim
+     maxime qui laudantium ut, provident cumque delectus temporibus!</p></div>
   <Carrusel></Carrusel>
+  <div className='texto-central'> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, 
+    nobis ex, ad tenetur libero saepe voluptatum est alias incidunt, itaque dignissimos! Enim
+     maxime qui laudantium ut, provident cumque delectus temporibus!</p></div>
+  </div>
+
+  <div>
+  <table className="mi-tabla">
+        <tr>
+          <td className="column">
+            <ul className="lista">
+            
+            </ul>
+          </td>
+        </tr>
+    </table>
   </div>
   </> 
   );
 };
 
 export default Landing;
-
-
- /* /* <div className='banner-container'>
-    <img className='imagen-banner' alt="banner" src={frame} />
-    {/* <div className='banner-text'><p>SLOGAN</p></div> 
-    </div> */

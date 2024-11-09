@@ -36,23 +36,4 @@ function Carrusel() {
   );
 }
 
-
-
-
 export default Carrusel;
-
-  {/* // <div className="carousel">
-    //   <button className="arrow left" onClick={prevSlide}>❮</button>
-    //   <div className="carousel-container">
-    //     <div className={`card left`} key={items[leftIndex].id}>
-    //       {items[leftIndex].content}
-    //     </div>
-    //     <div className={`card active`} key={items[currentIndex].id}>
-    //       {items[currentIndex].content}
-    //     </div>
-    //     <div className={`card right`} key={items[rightIndex].id}>
-    //       {items[rightIndex].content}
-    //     </div>
-    //   </div>
-    //   <button className="arrow right" onClick={nextSlide}>❯</button>
-    // </div> */}

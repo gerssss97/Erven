@@ -6,7 +6,7 @@ import facebook from './facebook.svg'
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer>
       <table className="mi-tabla">
         <tr>
           <td className="column">

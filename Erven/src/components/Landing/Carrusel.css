@@ -1,99 +1,22 @@
-/* 
-  .icono-svc {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
-  
-  button {
-    background-color: white;
-    border: none;
-    color: #297B92;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  
-  h3 {
-    font-size: 18px;
-    margin: 15px 0;
-  }
-  
-  p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .carousel {
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    z-index: 1;
-    margin-top: 10%;
-  }
-  
-  .carousel-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .card {
-    min-width: 200px; 
-    height: 300px; 
-    background: lightblue;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s ease;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  
-  .active {
-    transform: scale(1.2); 
-  }
-  
-  .left,
-  .right {
-    transform: scale(0.9); 
-  }
-  
-  .arrow {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 30px;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .left {
-    left: 24vw;
-  }
-  
-  .right {
-    right: 24vw;
-  } */
-
 .swiper{
-  /* top: 25vh; */
   background-color: pink;
-  height: 300px;
-  width: 600px;
+  height: 20vh;
+  width: 80vh;
   top: 6.5rem !important;
-  position: relative !important;
+  padding-top: 10px!important;
+  margin-bottom: 55px!important;
+  align-items: center !important;
 }
 
+
 .swiper-slide{
-  background-color: green;
+  background-color: rgb(7, 118, 174);
   margin-top: 20px;
+  border-radius: 10px;
+  /* height: 200px !important; */
+  height: 10vh !important;
+  width: 20vh !important;
+
 }
 .swiper-slide-next{
   transform: scale(1.2)!important;
