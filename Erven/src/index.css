@@ -10,29 +10,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   overflow-y: auto;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit; /* Asegura que todo usa el mismo box model */
-}
-
-
 body {
   margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  line-height: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;  
-  height: 100vh;
+  border: 6px solid red;
+  line-height: normal; 
   overflow-x: hidden; 
 }
 

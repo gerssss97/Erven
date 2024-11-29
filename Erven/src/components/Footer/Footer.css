@@ -1,18 +1,14 @@
 footer{
-    /* position: sticky; */
-    /* bottom: 0; */
-    /* position: absolute;
-    bottom: 0; */
-    display: flex;
+    display: flex; 
     flex-direction: row;
-    /* margin-top: auto;  */
     background-color: #297B92;  
-    padding: 1rem;
-    text-align: left;
-    align-items: center;
+    /* padding: 1rem; */
+    text-align: left; 
+    align-items: center; 
     width: 100%;  
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 1000; 
+    margin-top: auto;
 }
 
 .mi-tabla {

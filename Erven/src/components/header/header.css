@@ -9,11 +9,10 @@
     color: #000204;
     background-color: #ffffff;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
-    z-index: 1000;
-    
+    z-index: 1000;    
 }
 
 .navbar-logo {
