@@ -17,7 +17,7 @@
 
 body {
   margin: 0;
-  border: 6px solid red;
+  /* border: 6px solid red; */
   line-height: normal; 
   overflow-x: hidden; 
 }

@@ -1,26 +1,46 @@
 .swiper{
   background-color: pink;
-  height: 20vh;
-  width: 80dvw;
-
-  padding-top: 10px!important;
+  width: 60% !important;
   /* margin-bottom: 55px!important; */
-  align-items: center !important;
+  /* overflow: hidden; */
+  padding-top: 2% !important;
+  padding-bottom: 2% !important;
 }
 
+.swiper-wrapper{
+  /* display: flex !important; */
+  /* align-items: center !important; */
+  /* justify-content: center!important; */
+  justify-content: space-around !important;
 
-.swiper-slide{
+  /* transition: all 0.3s ease-in-out;  */
+/* overflow: hidden!important; */
+} 
+
+.swiper-slide{ 
   background-color: rgb(7, 118, 174);
-  margin-top: 20px;
   border-radius: 10px;
-  /* height: 200px !important; */
-  height: 10vh !important;
-  width: 20vh !important;
+  height: 15vh !important;
+  width: 20% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+  text-align: center !important;
+}
 
+
+
+.swiper-slide-active {
+  transform: scale(1.2) !important; /* Escala el slide activo */
+  opacity: 0.5; /* Asegura que sea totalmente visible */
 }
-.swiper-slide-next{
-  transform: scale(1.2)!important;
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  transform: scale(0.9); /* Escala los slides previos y siguientes */
+  opacity: 0.3; /* Añade un efecto visual (opcional) */
 }
+
 .card2{
   background-color: aquamarine;
 }
